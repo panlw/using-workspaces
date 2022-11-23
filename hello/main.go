@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println(stringx.ToUpper("Hello"))
+	fmt.Println(stringx.ToLower("Hello"))
 }
