@@ -1,0 +1,24 @@
+version: "3"
+
+tasks:
+  test:
+    cmds:
+      - go test -v ./hello/pkg/...
+      - go test -v ./world/pkg/...
+  clean:
+    cmds:
+      - go clean -cache
+
+  run:hello:
+    cmds:
+      - go run ./hello
+  bin:hello:
+    cmds:
+      - go build -o tmp/hello ./hello
+
+  run:world:
+    cmds:
+      - go run ./world
+  bin:world:
+    cmds:
+      - go build -o tmp/world ./world

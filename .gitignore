@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Ignore local files
+tmp/
+.env*
+
+# Ignore binary files
+*.xlsx
